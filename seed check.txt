@@ -1,0 +1,18 @@
+SELECT 'reps' AS table_name, COUNT(*) AS total FROM reps
+UNION ALL
+SELECT 'products', COUNT(*) FROM products
+UNION ALL
+SELECT 'customers', COUNT(*) FROM customers
+UNION ALL
+SELECT 'orders', COUNT(*) FROM orders;
+
+
+
+
+o/p
+table_name total      
+---------- -----------
+reps                 4
+products             9
+customers           24
+orders              90
